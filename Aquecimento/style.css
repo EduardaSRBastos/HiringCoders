@@ -1,0 +1,53 @@
+
+            body{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;               
+                text-align: center;
+            }
+            h1, span{
+                color:darkgoldenrod
+            }
+            span{
+                color:cornflowerblue
+            }
+            li{
+                text-decoration: underline;
+            }
+            ul{
+                border: 1px solid rgb(148, 148, 0);
+            }
+            #login{
+                background-color: black;
+                color:white;
+            }
+            #registro{
+                background-color: blue;
+                color:white;
+            }
+            .copy{
+                font-size: 8px;
+            }
+            .container {
+                max-width: 11000px;
+                margin: 0 auto;
+                display: flex;
+            }
+            .lista__footer {
+                list-style: none;
+            }
+            a{
+                text-decoration: none;
+                color:brown;
+            }
+            li{
+                padding: 10px;
+            }
+            nav span{
+                color: indigo;
+                transition: 300ms;
+                cursor: pointer;
+            }
+            nav span:hover{
+                color: blue !important;
+                text-decoration: underline;
+                background-color: lightcoral;
+            }
