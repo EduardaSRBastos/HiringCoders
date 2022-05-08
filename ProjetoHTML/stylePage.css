@@ -1,0 +1,163 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-block-size: 100vh;
+	max-inline-size: 100%;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*background: linear-gradient(to top, rgb(126, 132, 239), rgb(75, 68, 159));*/
+}
+
+a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #c82d3b;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    inline-size: 100%;
+    padding: 15px 80px 30px 40px;
+}
+header ul{
+    list-style: none;
+	gap: 15px;
+    display: flex;
+}
+header ul li{
+    padding: 5px;
+    border-right: 2px;
+    position: relative;
+	transition: 300ms ease-in-out;
+}
+header ul li a:hover{
+    color: #5b9269;
+    text-decoration: underline;
+	transition: 300ms ease-in-out;
+}
+
+.container{
+    text-align: center;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.container .name h1{
+    cursor: default;
+    font-size: 60px;
+    color: #c82d3b;
+}
+.container .name h5{
+    cursor: default;
+    font-size: 25px;
+    color: #6a181f;
+    line-height: 1;
+}
+#arrow{
+    cursor: pointer;
+    animation: blink 1s steps(S, start) infinite;
+}
+@keyframes blink {
+    to{
+        visibility: hidden;
+    }
+}
+#animation{
+    color: #6a181f;
+    transition: 300ms;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#animation:hover {
+	color: #c82d3b;
+    font-size: 30px;
+}
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+.active{
+    display: block !important;
+}
+
+.text {
+	background: linear-gradient(
+		to right bottom,
+		rgba(255, 255, 255, 0.3),
+		rgba(255, 255, 255, 0.2)
+	);
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	
+}
+#about p{
+    max-inline-size: 650px;
+    text-align: justify;
+    font-weight: 300;
+    padding: 30px;
+}
+
+#textoEmail{
+    font-weight: 500;
+    font-size: 15px;
+    margin: 40px 0px 15px 50px;
+    text-align: justify;
+    cursor: default;
+}
+.form input{
+    font-weight: 400;
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    
+}
+.form button{
+    width: 25%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #5b9269 50%,#c82d3b 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: white;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -5px;
+}
+.form button:hover{
+    background-position: left bottom;
+    color: black;
+}
+
+@media only screen and (max-width: 480px){
+    .form{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .container .name h1{
+        font-size: 30px;
+    }
+    .container .name h5{
+        font-size: 15px;
+    }
+    #about p{
+        max-width: 80%;
+        text-align: justify;
+    }
+}

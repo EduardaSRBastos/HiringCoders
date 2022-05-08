@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="Firefox">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylePage.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+        <title>Eduarda Bastos</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <a href="index.html"><img src="logo.png" alt="Logo"></a>
+            </div>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://github.com/EduardaSRBastos">GitHub</a>
+                </li>
+                <li>
+                    <a href="mailto:eduardasofia2000@gmail.com">Email</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/eduardabastos/">LinkedIn</a>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <section class="container">
+                <div class="name">
+                    <h1>Eduarda Bastos</h1>
+                    <h5>Full-Stack Developer</h5>
+                </div>
+                <div onclick="displayAbout()" id="arrow">
+                    <p id="animation">⌵</p>
+                </div>
+                <div class="text">
+                    <div style="display: none;" id="about">
+                        <p>
+                            Licenciatura em Engenharia Informática na 
+                            Universidade de Trás-os-Montes e Alto Douro.<br><br>
+                            Linguagens: C/C++, C#, Visual Basic, Python, Assembly
+                            JavaScript, PHP.                 
+                        </p>
+                    </div>
+                </div>
+                    <div class="form">
+                        <form method="GET" action="">
+                            <p id="textoEmail">Deixe o seu Email:</p>
+                            <input type="email" id="email" placeholder="Digite o seu email">
+                            <button id="submite">Enviar!</button>
+                        </form>
+                    </div>
+                
+            </section>
+        </main>
+        <script>
+            function displayAbout(){
+                var arrow = document.getElementById("animation");
+                arrow.classList.toggle("rotate");
+                var display = document.getElementById("about");
+                display.classList.toggle("active");
+            }
+        </script>
+    </body>
+</html>
