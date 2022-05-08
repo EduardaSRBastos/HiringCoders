@@ -144,10 +144,54 @@ header ul li a:hover{
     color: black;
 }
 
-@media only screen and (max-width: 480px){
+.flex{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-top: 10px;
+    
+  }
+  .flex div{
+    padding: 10px;
+    margin: 10px;
+    background: linear-gradient(
+		to right bottom,
+		rgba(255, 255, 255, 0.3),
+		rgba(255, 255, 255, 0.2)
+	);
+    transition: all 300ms ease-out;
+    border-radius: 5px;
+  }
+  .flex div:hover{
+    background: linear-gradient(
+		to right bottom,
+		rgba(255, 255, 255, 0.6),
+		rgba(255, 255, 255, 0.4)
+	);
+    transition: all 300ms ease-out;
+  }
+  .flex img{
+    max-width: 200px;
+  }
+  .flex p{
+    width: 200px;
+  }
+  .flex h4{
+    margin: 10px;
+  }
+  
+@media only screen and (max-width: 768px){
     .form{
         width: 100%;
     }
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      header{
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+      }
 }
 @media only screen and (max-width: 480px){
     .container .name h1{
