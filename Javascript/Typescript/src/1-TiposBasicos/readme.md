@@ -1,0 +1,10 @@
+-string
+-number
+-boolean
+-array
+-tupla
+-enum
+-any
+-unknown
+-null e undefined
+-object
