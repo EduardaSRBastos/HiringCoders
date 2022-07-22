@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-ts",
+  "version": "1.0.0",
+  "description": "Projeto de TypeScript.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typescript",
+    "user",
+    "create"
+  ],
+  "author": "Eduarda Bastos",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.7.4"
+  }
+}
